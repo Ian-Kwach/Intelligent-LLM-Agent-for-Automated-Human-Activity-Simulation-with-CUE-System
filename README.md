@@ -60,5 +60,4 @@ Acknowledgements:
 - Inspired by innovative prompt engineering techniques.
 
 Contact:
-For any questions or suggestions, feel free to reach out at your.email@domain.com.
-iankwach00@gmail.com
+For any questions or suggestions, feel free to reach out at iankwach00@gmail.com
