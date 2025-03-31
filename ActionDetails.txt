@@ -1,0 +1,277 @@
+Action Details for CUE System
+===============================================
+
+Network Activities Module
+---------------------------
+Action 01: Ping targets (Sequence or Parallel)
+  Description: Use the system’s ping utility to check connectivity with a target IP address.
+  Command Format: ping <ip_address>
+  Example: ping 192.168.1.1
+
+Action 02: Capture webpage screenshot
+  Description: Capture and save a screenshot from the specified URL (simulated).
+  Command Format: screenshot <url>
+  Example: screenshot http://example.com
+
+Action 03: Download all contents of a web page
+  Description: Download the HTML, CSS, and JavaScript from the provided URL.
+  Command Format: download <url>
+  Example: download http://example.com
+
+Action 04: Connect to FTP server
+  Description: Establish a connection to an FTP server (simulated).
+  Command Format: ftp <ftp_server> <username> <password>
+  Example: ftp ftp.example.com anonymous password
+
+Action 05: SSH connect and run command
+  Description: Execute a command on a remote host via SSH.
+  Command Format: ssh <ip> <username> <password> <command>
+  Example: ssh 192.168.1.10 admin admin123 ls -la
+
+Action 06: SCP file to target
+  Description: Simulate secure file transfer to a target system.
+  Command Format: scp <source_path> <target_ip> <target_path> <username> <password>
+  Example: scp C:\file.txt 192.168.1.20 /home/user/file.txt user pass
+
+Action 07: SSH port forward to local
+  Description: Establish an SSH port forwarding tunnel (simulated).
+  Command Format: portforward <target_ip> <local_port> <remote_port> <username> <password>
+  Example: portforward 192.168.1.20 8080 80 user pass
+
+Action 08: UDP connect to target
+  Description: Simulate establishing a UDP connection to the target.
+  Command Format: udp <target_ip> <port>
+  Example: udp 192.168.1.20 53
+
+Action 09: TCP connect to target
+  Description: Simulate establishing a TCP connection to the target.
+  Command Format: tcp <target_ip> <port>
+  Example: tcp 192.168.1.20 80
+
+Action 10: Connect to SQLite3 Database
+  Description: Verify connection to a local SQLite database.
+  Command Format: sqlite <db_path>
+  Example: sqlite /home/user/database.db
+
+Action 11: Connect to InfluxDB 1.8X Database
+  Description: Simulate connection to an InfluxDB instance.
+  Command Format: influx <host> <port> <username> <password> <database>
+  Example: influx localhost 8086 user pass mydb
+
+Action 12: Send and receive Email
+  Description: Send an email using stored credentials (simulated).
+  Command Format: send email <sender_email> <receiver_email> <subject> <message>
+  Example: send email sender@example.com receiver@example.com "Meeting Reminder" "Don't forget the meeting at 3 PM."
+
+Action 13: Open URL in browser
+  Description: Launch the default web browser with the specified URL.
+  Command Format: openurl <url>
+  Example: openurl http://example.com
+
+Action 14: Connect to NTP service
+  Description: Establish a connection to an NTP server (simulated).
+  Command Format: ntp <server>
+  Example: ntp pool.ntp.org
+
+Action 15: Send HTTP GET/POST request
+  Description: Make an HTTP request to the specified URL.
+  Command Format: http <url> [GET|POST] [data]
+  Example: http http://example.com GET
+
+
+Application Activities Module
+-------------------------------
+Action 16: Start an application file
+  Description: Launch a desktop application using its file path.
+  Command Format: startapp <application_path>
+  Example: startapp "C:\Program Files\Notepad++\notepad++.exe"
+
+Action 17: Edit a PPT file
+  Description: Open a PowerPoint file and add a new slide with custom text.
+  Command Format: editppt <ppt_file_path> <text_to_add>
+  Example: editppt C:\Work\presentation.pptx "Updated security banner"
+
+Action 18: Start a Zoom meeting
+  Description: Launch a Zoom meeting using a meeting link.
+  Command Format: zoom <meeting_link>
+  Example: zoom https://zoom.us/j/1234567890
+
+Action 19: Git download/pull the project
+  Description: Clone or update a repository from GitHub.
+  Command Format: git <repository_url> <clone_path>
+  Example: git https://github.com/example/repo.git C:\Projects\repo
+
+Action 20: Use Wireshark to capture network traffic
+  Description: Simulate capturing network traffic using Wireshark.
+  Command Format: wireshark <interface>
+  Example: wireshark eth0
+
+Action 21: Use FTK Imager to capture memory dump file
+  Description: Simulate capturing a memory dump from a target using FTK Imager.
+  Command Format: ftkimager <target>
+  Example: ftkimager victim
+
+Action 22: Connect to Scheduler PLC and send command
+  Description: Simulate sending a command to a Scheduler PLC.
+  Command Format: plc <ip> <command>
+  Example: plc 192.168.0.100 Restart
+
+Action 23: Connect to Siemens RTU and send command
+  Description: Simulate sending a command to a Siemens RTU.
+  Command Format: rtu <ip> <command>
+  Example: rtu 192.168.0.101 Reset
+
+Action 24: Use Nmap to scan the network
+  Description: Scan the network for active hosts using Nmap (simulated).
+  Command Format: nmap <target_range>
+  Example: nmap 192.168.1.0/24
+
+Action 25: Use speed test to check network speed
+  Description: Simulate checking the current network speed.
+  Command Format: speedtest
+  Example: speedtest
+
+
+Human Activities Module
+-------------------------
+Action 26: Record user's mouse and keyboard actions
+  Description: Simulate recording the user's input activities.
+  Command Format: record
+  Example: record
+
+Action 27: Generate the keyboard type-in event
+  Description: Simulate a keyboard event.
+  Command Format: keyevent
+  Example: keyevent
+
+Action 28: Generate the mouse event
+  Description: Simulate a mouse event.
+  Command Format: mouseevent
+  Example: mouseevent
+
+Action 29: Start Chrome with Google Dino game
+  Description: Launch Chrome to play the Google Dino game (simulated).
+  Command Format: chrome
+  Example: chrome
+
+Action 30: Send chat message via Telegram
+  Description: Send a chat message using a Telegram bot.
+  Command Format: telegramchat <message>
+  Example: telegramchat "Hello, world!"
+
+Action 31: Select local file and play/open it
+  Description: Open or play a file from local storage (simulated).
+  Command Format: playfile <file_path>
+  Example: playfile C:\Work\file.txt
+
+Action 32: Connect to web camera and capture video
+  Description: Simulate capturing video from a web camera.
+  Command Format: webcam
+  Example: webcam
+
+
+System Activities Module
+--------------------------
+Action 33: Run commands on a different system
+  Description: Execute a command on a remote host via SSH (simulated).
+  Command Format: remotecommand <ip> <command>
+  Example: remotecommand 192.168.1.10 "uname -a"
+
+Action 34: Open local connected camera for video capture
+  Description: Simulate opening a local camera.
+  Command Format: localcamera
+  Example: localcamera
+
+Action 35: RS232/485 Communication
+  Description: Simulate reading/setting serial data on a given port.
+  Command Format: rs232 <port> <command>
+  Example: rs232 COM1 read
+
+Action 36: Check OS state and record result
+  Description: Retrieve current operating system information (simulated).
+  Command Format: osstate
+  Example: osstate
+
+Action 37: Mirror network traffic using Ettercap
+  Description: Simulate mirroring target network traffic with Ettercap.
+  Command Format: ettercap <target>
+  Example: ettercap localhost
+
+Action 38: Get directions via Google Maps API
+  Description: Retrieve simulated directions to a destination.
+  Command Format: googlemap <destination>
+  Example: googlemap "New York, NY"
+
+Action 39: Open Cytoscape and convert graph to JSON
+  Description: Simulate processing a graph with Cytoscape.
+  Command Format: cytoscape <graph_file>
+  Example: cytoscape graph.txt
+
+Action 40: Obfuscate Python code
+  Description: Simulate obfuscation (encoding/decoding) of Python code.
+  Command Format: obfuscate <code>
+  Example: obfuscate "print('Hello, World!')"
+
+Action 41: FTP Connection Simulation
+  Description: Simulate establishing an FTP connection.
+  Command Format: ftp_connect <ftp_server> <username> <password>
+  Example: ftp_connect ftp.example.com anonymous password123
+
+
+RTC2 Function API (Ninja-Framework)
+--------------------------------------
+Action 42: Download file from C2 to local host
+  Description: Retrieve a file from the RTC2 database (simulated).
+  Command Format: download_from_c2
+  Example: download_from_c2
+
+Action 43: Upload a local file to C2 server
+  Description: Upload a file from local storage to the RTC2 server (simulated).
+  Command Format: upload_to_c2
+  Example: upload_to_c2
+
+
+Malware Task API (Ninja-Framework)
+------------------------------------
+Action 44: Attack Task [01] - Run command on victim
+  Description: Execute a command on the victim system (simulated).
+  Command Format: attack_run <command>
+  Example: attack_run "ls -la"
+
+Action 45: Attack Task [02] - Steal file from victim
+  Description: Retrieve a file from the victim and upload it to C2 (simulated).
+  Command Format: attack_steal <file_path>
+  Example: attack_steal /path/to/secret.txt
+
+Action 46: Attack Task [03] - Inject file from C2 to victim
+  Description: Inject a file from C2 storage into the victim system (simulated).
+  Command Format: attack_inject <file_path>
+  Example: attack_inject /path/to/inject.txt
+
+Action 47: Attack Task [04] - Capture victim screenshot
+  Description: Capture a screenshot from the victim and upload it to C2 (simulated).
+  Command Format: attack_capture
+  Example: attack_capture
+
+Action 48: Attack Task [05] - SSH to target from victim
+  Description: Execute an SSH command on a target via the victim system (simulated).
+  Command Format: attack_ssh <target_ip> <command>
+  Example: attack_ssh 192.168.1.50 "ipconfig"
+
+Action 49: Attack Task [06] - SCP file from victim to target
+  Description: Securely copy a file from the victim to a target system (simulated).
+  Command Format: attack_scp <source> <target>
+  Example: attack_scp /path/from /path/to
+
+Action 50: Attack Task [07] - Scan victim sub-network IPs
+  Description: Scan the victim's local subnet for active IP addresses (simulated).
+  Command Format: attack_scan <subnet>
+  Example: attack_scan 192.168.1.0/24
+
+Action 51: Attack Task [09] - Eavesdrop victim's traffic
+  Description: Capture the victim's network traffic to a pcap file (simulated).
+  Command Format: attack_eavesdrop
+  Example: attack_eavesdrop
+
+===============================================
+End of Action Details
