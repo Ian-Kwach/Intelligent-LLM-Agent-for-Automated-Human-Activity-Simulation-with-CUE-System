@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intelligent LLM Agent Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { padding-top: 60px; }
+    #resultOutput { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">LLM Agent Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active"><a class="nav-link" href="index.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="file_management.html">File Management</a></li>
+        <li class="nav-item"><a class="nav-link" href="task_assignment.html">Task Assignment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Intelligent LLM Agent Dashboard</h1>
+    <p>Type natural language commands (e.g., "open zoom meeting", "send an email with meeting reminder")—the agent will automatically translate and execute the appropriate action.</p>
+    
+    <div class="card mb-4">
+      <div class="card-header">Command Input</div>
+      <div class="card-body">
+        <form id="commandForm">
+          <div class="form-group">
+            <label for="commandInput">Enter your instruction:</label>
+            <input type="text" class="form-control" id="commandInput" placeholder="e.g., open zoom meeting">
+          </div>
+          <button type="submit" class="btn btn-primary">Send Command</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">Execution Result</div>
+      <div class="card-body">
+        <pre id="resultOutput"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById("commandForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      var instruction = document.getElementById("commandInput").value;
+      // Call our backend API that integrates with the IntelligentLLMAgent
+      fetch("/api/executeCommand", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ instruction: instruction })
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("resultOutput").textContent = data.result;
+      })
+      .catch(error => {
+        document.getElementById("resultOutput").textContent = "Error: " + error;
+      });
+    });
+  </script>
+</body>
+</html>
