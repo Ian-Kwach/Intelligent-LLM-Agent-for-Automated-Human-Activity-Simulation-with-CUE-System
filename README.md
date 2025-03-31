@@ -1,6 +1,6 @@
 # Intelligent LLM Agent for Automated Human Activity Simulation with CUE System
 
-"""
+
 Project Overview:
 This project aims to develop an intelligent Large Language Model (LLM) agent that automates the simulation of complex human activities within the Cluster User Emulator (CUE) system. The agent leverages prompt engineering to dynamically generate and execute program code, utilizing both static and dynamic function calls through the CUE API. The goal is to improve efficiency, adaptability, and scalability for tasks such as debugging, system administration, and behavioral simulations.
 
@@ -61,4 +61,4 @@ Acknowledgements:
 
 Contact:
 For any questions or suggestions, feel free to reach out at your.email@domain.com.
-"""
+iankwach00@gmail.com
