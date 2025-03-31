@@ -1,0 +1,48 @@
+Name: Alice Johnson
+Role: Software Engineer
+IP address: 192.168.1.101
+SSH username: alicej
+SSH password: Passw0rdAlice!
+Workstation functions: Ping a remote host using its IP address; Download all the contents in a web page; Open an URL using a browser; Send Telegram message; Run system commands using command prompt; Open desktop application; Edit a powerpoint; Clone a Github repository to the local folder; Send and receive email; Connect to a remote host using SSH and able to run any command
+
+Name: Bob Smith
+Role: System Administrator
+IP address: 192.168.1.102
+SSH username: bobsmith
+SSH password: Passw0rdBob!
+Workstation functions: Ping a remote host using its IP address; Download all the contents in a web page; Open an URL using a browser; Send Telegram message; Run system commands using command prompt; Open desktop application; Edit a powerpoint; Clone a Github repository to the local folder; Send and receive email; Connect to a remote host using SSH and able to run any command
+
+Name: Charlie Brown
+Role: DevOps Engineer
+IP address: 192.168.1.103
+SSH username: charlieb
+SSH password: Passw0rdCharlie!
+Workstation functions: Ping a remote host using its IP address; Download all the contents in a web page; Open an URL using a browser; Send Telegram message; Run system commands using command prompt; Open desktop application; Edit a powerpoint; Clone a Github repository to the local folder; Send and receive email; Connect to a remote host using SSH and able to run any command
+
+Name: Dana White
+Role: Database Administrator
+IP address: 192.168.1.104
+SSH username: danawhite
+SSH password: Passw0rdDana!
+Workstation functions: Ping a remote host using its IP address; Download all the contents in a web page; Open an URL using a browser; Send Telegram message; Run system commands using command prompt; Open desktop application; Edit a powerpoint; Clone a Github repository to the local folder; Send and receive email; Connect to a remote host using SSH and able to run any command
+
+Name: Eva Green
+Role: Network Engineer
+IP address: 192.168.1.105
+SSH username: evagreen
+SSH password: Passw0rdEva!
+Workstation functions: Ping a remote host using its IP address; Download all the contents in a web page; Open an URL using a browser; Send Telegram message; Run system commands using command prompt; Open desktop application; Edit a powerpoint; Clone a Github repository to the local folder; Send and receive email; Connect to a remote host using SSH and able to run any command
+
+Name: Frank Moore
+Role: Security Analyst
+IP address: 192.168.1.106
+SSH username: frankmoore
+SSH password: Passw0rdFrank!
+Workstation functions: Ping a remote host using its IP address; Download all the contents in a web page; Open an URL using a browser; Send Telegram message; Run system commands using command prompt; Open desktop application; Edit a powerpoint; Clone a Github repository to the local folder; Send and receive email; Connect to a remote host using SSH and able to run any command
+
+Name: Grace Lee
+Role: Technical Support Specialist
+IP address: 192.168.1.107
+SSH username: gracelee
+SSH password: Passw0rdGrace!
+Workstation functions: Ping a remote host using its IP address; Download all the contents in a web page; Open an URL using a browser; Send Telegram message; Run system commands using command prompt; Open desktop application; Edit a powerpoint; Clone a Github repository to the local folder; Send and receive email; Connect to a remote host using SSH and able to run any command
